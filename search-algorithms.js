@@ -13,6 +13,23 @@ function findElementUsingLinearSearch(array, searchedElement) {
     return ELEMENT_NOT_FOUND;
 }
 
+function findElementUsingOrderedLinearSearch(array, searchedElement) {
+	const ELEMENT_NOT_FOUND = -1;
+
+    if (array === undefined || array === null || array.length === 0)
+        return ELEMENT_NOT_FOUND;
+
+    for (let i = 0; i < array.length; i++) {
+        if (array[i] === searchedElement)
+            return i;
+		
+		if (array[i] > searchedElement)
+			return;
+    }
+
+    return ELEMENT_NOT_FOUND;
+}
+
 function findElementUsingBinarySearch(array, searchedElement) {
     const ELEMENT_NOT_FOUND = -1;
 
