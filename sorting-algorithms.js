@@ -21,3 +21,5 @@ function bubbleSort(array, ascending = true) {
 		thereWereSwap = false;
 	}
 }
+
+// Test commit
