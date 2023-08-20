@@ -24,7 +24,7 @@ function findElementUsingOrderedLinearSearch(array, searchedElement) {
             return i;
 		
 		if (array[i] > searchedElement)
-			return;
+			return ELEMENT_NOT_FOUND;
     }
 
     return ELEMENT_NOT_FOUND;
@@ -45,7 +45,8 @@ function findElementUsingBinarySearch(array, searchedElement) {
             return middleIndex;
         else if (searchedElement < array[middleIndex])
             endIndex = middleIndex - 1;
-        else startIndex = middleIndex + 1;
+        else
+            startIndex = middleIndex + 1;
 
         middleIndex = Math.floor((startIndex + endIndex) / 2);
     }
