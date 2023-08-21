@@ -65,7 +65,3 @@ function getMinValueIndex(array, startIndex, endIndex) {
     return minValueIndex;
 }
 
-let myArray = [5, 1, 4, 7, 9, 8];
-//orderUsingBubbleSort(myArray, false);
-//orderUsingSelectionSort(myArray, false);
-console.log(myArray);
